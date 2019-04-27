@@ -26,5 +26,6 @@ $relationship = 'relationship';
 $phonenumber = '11';
 $sql = "insert into 'user' (nickname,email,password,babyname,babysex,babybirthday,guardianname,guardiansex,guardianidcard,relationship,phonenumber) VALUES ('{$nickname}','{$email}','{$password}','{$babyname}','{$babysex}','{$babybirthday}','{$guardianname}','{$guardiansex}','{$guardianidcard}','{$relationship}','{$phonenumber}')";
 $a=mysqli_query($link,$sql);
+echo $sql;
 echo $a;
 ?>
