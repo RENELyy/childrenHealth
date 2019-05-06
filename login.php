@@ -11,5 +11,5 @@ if(mysqli_num_rows($result) > 0 ) {
 	echo "0 结果";
 }
 mysqli_close($link);
-each $result;
+echo $result;
 ?>
