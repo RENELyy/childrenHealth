@@ -3,8 +3,7 @@ include("coon.php");
 $sql = "select * from `user`";
 $result = mysqli_query($link,$sql);
 if(mysqli_num_rows($result) > 0 ) {
-	$output[] = array('RnickName' => $row['RnickName'],
-            'id' => $row['id'],
+	$output[] = array('id' => $row['id'],
             'username' => $row['username'],
             'email' => $row['email'],
             'password' => $row['password'],
