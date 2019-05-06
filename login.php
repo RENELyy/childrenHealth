@@ -3,6 +3,7 @@ include("coon.php");
 $sql = "select * from `user`";
 $result = mysqli_query($link,$sql);
 if(mysqli_num_rows($result) > 0 ) {
+	while ($row = mysqli_fetch_assoc($result)) {
 	$output[] = array('id' => $row['id'],
             'username' => $row['username'],
             'email' => $row['email'],
@@ -16,6 +17,7 @@ if(mysqli_num_rows($result) > 0 ) {
 			'relationship' => $row['relationship'],
 			'phone' => $row['phone']
             );
+	 }
 }
 print_r(json_encode($output));
 ?>
