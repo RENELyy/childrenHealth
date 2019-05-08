@@ -10,7 +10,7 @@ if(mysqli_num_rows($result) > 0 ) {
             'title' => $row['title'],
             'body' => $row['body'],
             'Dphone' => $row['Dphone'],
-            'imagurl' => $row['imagurl']
+            'imageurl' => $row['imageurl']
             );
 	 }
 }
