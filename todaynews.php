@@ -1,6 +1,6 @@
 <?php
 include("coon.php");
-$sql = "select * from `publish`";
+$sql = "select * from `publish` order by `id` desc";
 $result = mysqli_query($link,$sql);
 if(mysqli_num_rows($result) > 0 ) {
 	while ($row = mysqli_fetch_assoc($result)) {
