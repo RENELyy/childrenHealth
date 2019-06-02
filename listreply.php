@@ -6,6 +6,6 @@ $replytime = $_GET['replytime'];
 $replycontent = $_GET['replycontent'];
 $view = $_GET['view'];
 $replyimg = $_GET['replyimg'];
-$sql = "insert into `reply` VALUES ('{$nickName}','{$replyname}','{$replycontent}','{$replytime}','{$view}','{$replyimg}')";
+$sql = "insert into `reply` (nickName,replyname,replycontent,replytime,view,replyimg) VALUES ('{$nickName}','{$replyname}','{$replycontent}','{$replytime}','{$view}','{$replyimg}')";
 mysqli_query($link,$sql);
 ?>
