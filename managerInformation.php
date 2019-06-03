@@ -15,7 +15,8 @@ if(mysqli_num_rows($result) > 0 ) {
             'othercontent' => $row['othercontent'],
 			'guardianname' => $row['guardianname'],
 			'guardianidcard' => $row['guardianidcard'],
-			'guardiantel' => $row['guardiantel']
+			'guardiantel' => $row['guardiantel'],
+			'mounthage' => $row['mounthage']
             );
 	 }
 }
